@@ -1,0 +1,98 @@
+{
+  "types": 
+  [
+
+    {
+      "id": 0,
+      "type": "quaternion",
+      "parse-scheme": 
+      [
+        {"name": "x", "type": "int16", "scale-factor": 0.000061035},
+        {"name": "y", "type": "int16", "scale-factor": 0.0000610351},
+        {"name": "z", "type": "int16", "scale-factor": 0.000061035},
+        {"name": "w", "type": "int16", "scale-factor": 0.000061035},
+        {"name": "accuracy", "type": "uint16", "scale-factor": 0.000061035}
+      ]
+    },
+
+    {
+      "id": 1,
+      "type": "xyz",
+      "parse-scheme": 
+      [
+        {"name": "x", "type": "int16", "scale-factor": 1},
+        {"name": "y", "type": "int16", "scale-factor": 1},
+        {"name": "z", "type": "int16", "scale-factor": 1}
+      ]
+    },
+
+    {
+      "id": 2,
+      "type": "orientation",
+      "parse-scheme": 
+      [
+        {"name": "heading", "type": "int16", "scale-factor": 0.010986},
+        {"name": "pitch", "type": "int16", "scale-factor": 0.010986},
+        {"name": "roll", "type": "int16", "scale-factor": 0.010986}
+      ]
+    },
+
+    {
+      "id": 3,
+      "type": "event",
+      "parse-scheme": 
+      [
+        {"name": "Event count", "type": "none", "scale-factor": 1}
+      ]
+    },
+
+    {
+      "id": 4,
+      "type": "activity",
+      "parse-scheme": 
+      [
+        {"name": "Activity status", "type": "uint16", "scale-factor": 1}
+      ]
+    },
+
+    {
+      "id": 5,
+      "type": "BSECOutput",
+      "parse-scheme":
+      [
+        {"name": "Temperature (compensated)", "type": "float", "scale-factor": 1},
+        {"name": "Humidity (compensated)", "type": "float", "scale-factor": 1}
+      ]
+    },
+
+    {
+      "id": 6,
+      "type": "BSECOutputV2",
+      "parse-scheme":
+      [
+        {"name": "IAQ(Mobile)", "type": "uint16", "scale-factor": 1},
+        {"name": "IAQ(Stationary)", "type": "uint16", "scale-factor": 1},
+        {"name": "bVOC-Equivalents(ppm)", "type": "uint16", "scale-factor": 0.01},
+        {"name": "CO2-Equivalents(ppm)", "type": "uint24", "scale-factor": 1},
+        {"name": "Accuracy", "type": "uint8", "scale-factor": 1}
+      ]
+    },
+
+    {
+      "id": 7,
+      "type": "BSECOutputV2Full",
+      "parse-scheme":
+      [
+        {"name": "IAQ(Mobile)", "type": "uint16", "scale-factor": 1},
+        {"name": "IAQ(Stationary)", "type": "uint16", "scale-factor": 1},
+        {"name": "b-VOC-Equivalents(ppm)", "type": "uint16", "scale-factor": 0.01},
+        {"name": "CO2-Equivalents(ppm)", "type": "uint24", "scale-factor": 1},
+        {"name": "Accuracy", "type": "uint8", "scale-factor": 1},
+        {"name": "Compensated-Temperature(°C)", "type": "int16", "scale-factor": 0.003906},
+        {"name": "Compensated-Humidity(%)", "type": "uint16", "scale-factor": 0.002},
+        {"name": "Compensated-Gas Resistance(Ohms)", "type": "float", "scale-factor": 1}
+      ]
+    }
+
+  ]
+}
